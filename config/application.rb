@@ -18,5 +18,8 @@ module Mysite
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Add Spyglasses middleware
+    config.middleware.use Spyglasses::Middleware
   end
 end
